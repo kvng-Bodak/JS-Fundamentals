@@ -1,6 +1,12 @@
-#!/usr/bin/node
-const lines = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
+const languages = ['C', 'Python', 'JavaScript'];
+let i = 0;
+let output = '';
 
-for (let i = 0; i < lines.length; i++) {
-  console.log(lines[i]);
+while (i < languages.length) {
+  output += languages[i] + '\n';
+  i++;
 }
+
+console.log(output.slice(0, -1)); // remove last newline
+
+
